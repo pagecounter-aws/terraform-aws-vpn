@@ -4,6 +4,7 @@ data "aws_vpc" "selected" {
 
 resource "aws_vpn_gateway" "vpn-gw" {
   vpc_id = var.aws_vpc_id
+  amazon_side_asn = var.amazon_side_asn
 }
 
 resource "aws_customer_gateway" "cgw" {
