@@ -13,7 +13,7 @@ variable "bgp_asn" {
 
 variable "amazon_side_asn" {
   description = "Amazon ASN"
-  default = 64512
+  default     = 64512
 }
 
 variable "aws-vpn-connection" {
