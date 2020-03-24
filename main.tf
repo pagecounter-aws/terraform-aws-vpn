@@ -27,6 +27,8 @@ resource "aws_vpn_connection" "aws-vpn-connection" {
   customer_gateway_id = aws_customer_gateway.cgw.id
   type                = "ipsec.1"
   static_routes_only  = false
+  tunnel1_inside_cidr = var.tunnel1_inside_cidr
+  tunnel2_inside_cidr = var.tunnel2_inside_cidr
 
   tags = {
     "Name" = var.aws-vpn-connection

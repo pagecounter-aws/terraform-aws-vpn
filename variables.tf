@@ -20,3 +20,13 @@ variable "aws-vpn-connection" {
   description = "aws vpn connection name"
   default     = "aws-vpn-connection"
 }
+
+variable "tunnel1_inside_cidr" {
+  description = "aws tunnel1_inside_cidr"
+  default     = null
+}
+
+variable "tunnel2_inside_cidr" {
+  description = "aws tunnel2_inside_cidr"
+  default     = null
+}
