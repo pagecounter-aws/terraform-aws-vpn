@@ -2,8 +2,9 @@ variable "aws_vpc_id" {
   description = "AWS VPC id"
 }
 
-variable "customer_gateway" {
-  description = "Customer Gateway"
+variable aws_customer_gateway {
+  description = "AWS Customer Gateway"
+  type    = string
 }
 
 variable "bgp_asn" {
