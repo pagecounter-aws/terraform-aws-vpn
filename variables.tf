@@ -2,8 +2,8 @@ variable "aws_vpc_id" {
   description = "AWS VPC id"
 }
 
-variable aws_customer_gateway {
-  description = "AWS Customer Gateway"
+variable customer_gateway_id {
+  description = "AWS Customer Gateway id"
   type    = string
 }
 
